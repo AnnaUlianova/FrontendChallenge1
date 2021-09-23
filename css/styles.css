@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  background: url(../images/pattern-background-desktop.svg), hsl(225, 100%, 94%);
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+p {
+  color: hsl(224, 23%, 55%);
+  margin-top: 0;
+}
+
+button {
+  display: block;
+  width: 100%;
+  background-color: hsl(245, 75%, 52%);
+  border-style: none;
+  border-radius: 10px;
+  box-shadow: 0 15px 25px 0 hsla(245, 75%, 52%, .11);
+  color: #fff;
+  font-weight: 700;
+  font-family: 'Red Hat Display', sans-serif;
+  padding: 15px;
+  margin-bottom: 25px;
+}
+
+button:hover {
+  background-color: hsl(224, 23%, 55%);
+}
+
+a {
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 450px;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 15px 25px 0 hsla(245, 75%, 52%, .11);
+}
+
+/* Header Section */
+.head-title {
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+}
+
+.head-container {
+  margin: 35px 60px 0;
+}
+
+/* Promotion Section */
+.promo-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 40px;
+  padding: 5px 20px;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 10px;
+}
+
+.price {
+  text-align: left;
+  width: 60%;
+  padding-left: 5%;
+}
+
+.price-title {
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+
+.change-href {
+  color: hsl(245, 75%, 52%);
+}
+
+.change-href:hover {
+  color: hsl(224, 23%, 55%);
+  text-decoration: none;
+}
+
+/* Ordering section */
+.order {
+  margin: 30px 40px 45px;
+}
+
+.cancel-href {
+  text-decoration: none;
+  color: hsl(224, 23%, 55%);
+  /* position: relative; */
+}
+
+.cancel-href:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+/* .cancel-href::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 50%;
+  top: 1.4rem;
+  background-color: hsl(224, 23%, 55%);
+  transform: translateX(-50%);
+  transition: all .3s ease-in;
+}
+
+.cancel-href:hover::before {
+  width: 100%; */
+}
+
+/* Media Query for phone */
+@media (max-width: 375px) {
+  .container {
+    background: url(../images/pattern-background-mobile.svg) hsl(225, 100%, 94%);
+  }
+
+  .card {
+    width: 340px;
+  }
+
+  .promo-container, .order {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .head-container {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
